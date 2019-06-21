@@ -23,6 +23,7 @@ public class Formatter {
 	}
 
 	private ArrayList<String> readAndSort() {
+		
 		String textToRead = null;
 		File file = new File("src/formatter/kunder.txt");
 		ArrayList<String> list = new ArrayList<>();

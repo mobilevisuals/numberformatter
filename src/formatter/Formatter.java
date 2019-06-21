@@ -53,11 +53,11 @@ public class Formatter {
 		Set<String> set = new TreeSet<String>(list);
 		try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("src/formatter/kunder2.txt"));) {
 
-			for (String r : set) {
-				int frequency=Collections.frequency(list, r);
+			for (String phoneNumber : set) {
+				int frequency=Collections.frequency(list, phoneNumber);
 				if(frequency>1)
 				{
-				bufferedWriter.write(r + ";" + frequency);
+				bufferedWriter.write(phoneNumber + ";" + frequency);
 				bufferedWriter.newLine();
 				}
 			}
